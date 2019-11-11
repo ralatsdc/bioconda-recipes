@@ -20,16 +20,19 @@ requirements:
   # samtools (tested with v1.2)
   run:
     - perl
-    - last ==638
-    - bwa ==0.7.8
-    - samtools ==1.6
+    - last >=548
+    - bwa >=0.7.10
+    - samtools >=1.6
 
 test:
+  files:
+    - "contigs.fa"
+
   commands:
-    - "apc.pl"
+    - "apc.pl -b actual contigs.fa && diff actual.1.fa expected.1.fa"
 
 about:
-  home: https://github.com/jfass/apc
+  home: https://github.com/ralatsdc/apc
   license: None
   license_file: LICENSE
   summary: (a) (p)erfect (c)ircle?
