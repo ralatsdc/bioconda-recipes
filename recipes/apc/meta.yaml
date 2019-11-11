@@ -20,9 +20,9 @@ requirements:
   # samtools (tested with v1.2)
   run:
     - perl
-    - last == 638p
-    - bwa == 0.7.8
-    - samtools == 1.6
+    - last ==638
+    - bwa ==0.7.8
+    - samtools ==1.6
 
 test:
   commands:
