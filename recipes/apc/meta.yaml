@@ -27,6 +27,7 @@ requirements:
 test:
   files:
     - "contigs.fa"
+    - "exptected.1.fa"
 
   commands:
     - "apc.pl -b actual contigs.fa && diff actual.1.fa expected.1.fa"
