@@ -1,0 +1,35 @@
+{% set name = "apc" %}
+{% set version = "v0.1.0" %}
+{% set sha256 = "7379d27ade82dbb010b6f6ad1cdc087377b0aa4d00739c1d6003ad705a5b124c" %}
+
+package:
+  name: {{ name }}
+  version: {{ version }}
+
+build:
+  number: 0
+  noarch: generic
+
+source:
+  url: https://github.com/ralatsdc/apc/archive/{{ version }}.tar.gz
+  sha256: {{ sha256 }}
+
+requirements:
+  # LAST aligner (tested with v548)
+  # BWA (tested with v0.7.10)
+  # samtools (tested with v1.2)
+  run:
+    - perl
+    - last == 638p
+    - bwa == 0.7.8
+    - samtools == 1.6
+
+test:
+  commands:
+    - "apc.pl"
+
+about:
+  home: https://github.com/jfass/apc
+  license: None
+  license_file: None
+  summary: (a) (p)erfect (c)ircle?
