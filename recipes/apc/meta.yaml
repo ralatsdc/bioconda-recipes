@@ -1,6 +1,6 @@
 {% set name = "apc" %}
-{% set version = "v0.1.0" %}
-{% set sha256 = "7379d27ade82dbb010b6f6ad1cdc087377b0aa4d00739c1d6003ad705a5b124c" %}
+{% set version = "v0.1.1" %}
+{% set sha256 = "798cf31b69ceb7e1085e24d860b66bc0f6fd5494af50791d2ccdf91696d3bfc2" %}
 
 package:
   name: {{ name }}
@@ -31,5 +31,5 @@ test:
 about:
   home: https://github.com/jfass/apc
   license: None
-  license_file: None
+  license_file: LICENSE
   summary: (a) (p)erfect (c)ircle?
