@@ -1,6 +1,6 @@
 {% set name = "python-chado" %}
-{% set version = "2.3.0" %}
-{% set sha256 = "49c8d577d610353d16446bc63b694dc1f94fa1aee19531935fa1b118f1ec63e3" %}
+{% set version = "2.3.4" %}
+{% set sha256 = "2c6bec92618a034b4e7bf051ac2ebbe6f0f6995b235f5552c86ad33f463fccb1" %}
 
 package:
   name: "{{ name|lower }}"

@@ -1,9 +1,9 @@
 {% set name = "BBMap" %}
-{% set version = "38.72" %}
-{% set sha256 = "dda01326f504818b29d6296cb6c7cd527627f7ed134ab7f5539b88ccf9cc24be" %}
+{% set version = "38.90" %}
+{% set sha256 = "a366531c566da5e7246ccf707b6770a92246c1cfe29fd30dc2d800c0d82269f1" %}
 
 build:
-  number: 0
+  number: 1
 
 package:
   name: {{ name|lower }}
@@ -18,8 +18,12 @@ requirements:
     - {{ compiler('c') }}
   host:
     - openjdk >=7.0
+    - pbzip2
+    - bzip2
   run:
     - openjdk >=7.0
+    - pbzip2
+    - bzip2
 
 test:
   files:

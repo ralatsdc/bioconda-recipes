@@ -1,5 +1,5 @@
-{% set version = "0.22.2" %}
-{% set sha256 = "273b3ba415f70faec70b052cc0b1e29a693e5836811d5fb4ef28370cd8500d29" %}
+{% set version = "0.23.0" %}
+{% set sha256 = "ea1625808487c1442dbf825d9cbe5c0cbc37ea5bd1460f59e1e0ccc80cc01c9e" %}
 
 package:
   name: bismark
@@ -7,7 +7,7 @@ package:
 
 build:
   noarch: generic
-  number: 0
+  number: 1
 
 source:
   url: https://github.com/FelixKrueger/Bismark/archive/{{ version }}.tar.gz
@@ -45,3 +45,4 @@ test:
 extra:
   identifiers:
     - biotools:bismark
+    - usegalaxy-eu:bismark_bowtie2

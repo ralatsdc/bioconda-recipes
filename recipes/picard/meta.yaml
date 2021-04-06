@@ -1,5 +1,5 @@
-{% set version = "2.21.2" %}
-{% set sha256 = "89be6d0fec5e4bf0a82db0aa17728e5f15d13456dcf9e7f75dd3af9901895700" %}
+{% set version = "2.25.1" %}
+{% set sha256 = "6d6e622d6b465f9fc704c37bcba55b0dac5ad14d07088bbdbdfade5cd027ee1c" %}
 
 package:
   name: picard
@@ -33,3 +33,7 @@ about:
     some of its metrics commands. The 'picard-slim' package offers an 
     installation of Picard without the  'r-base' dependency. 
   dev_url: https://github.com/broadinstitute/picard
+
+extra:
+  identifiers:
+    - usegalaxy-eu:picard_MarkDuplicates

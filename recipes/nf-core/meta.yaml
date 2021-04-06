@@ -1,6 +1,6 @@
 {% set name = "nf-core" %}
-{% set version = "1.7" %}
-{% set sha256 = "17f58bac741c50a9a601efbe91f229422c3088e509169712d83ed9d97b0762cc" %}
+{% set version = "1.13.3" %}
+{% set sha256 = "d95d474953fe7a52d788a49dac892552801bf935e26443de56dbf488cbc47803" %}
 
 package:
   name: {{ name|lower }}
@@ -22,7 +22,6 @@ requirements:
     - twine
   run:
     - python
-    - cookiecutter
     - click
     - gitpython
     - pyyaml
@@ -30,7 +29,14 @@ requirements:
     - requests-cache
     - tabulate
     - git
-    - jsonschema 
+    - jsonschema
+    - jinja2
+    - rich >=9.8.2
+    - prompt_toolkit>=3.0.3
+    - questionary>=1.8.0
+    - packaging
+    
+
     
 test:
   commands:

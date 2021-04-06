@@ -12,11 +12,12 @@ source:
     - krakenuniq.patch
 
 build:
-  number: 2
+  number: 4
   skip: True  # [osx]
 
 requirements:
   build:
+    - make
     - {{ compiler('cxx') }}
     - llvm-openmp  # [osx]
 
@@ -31,6 +32,7 @@ requirements:
     - perl
     - rsync
     - wget
+    - tar
     - llvm-openmp  # [osx]
     - perl-libwww-perl
     - perl-lwp-protocol-https

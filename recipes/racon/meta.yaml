@@ -1,21 +1,22 @@
 {% set name = "Racon" %}
-{% set version = "1.4.7" %}
+{% set version = "1.4.20" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 build:
-  number: 0
+  number: 1
 
 source:
   url: https://github.com/lbcb-sci/racon/releases/download/{{ version }}/racon-v{{ version }}.tar.gz
-  sha256: 65cff4c0d12547d7a2ff848f6a992da369ed33d8ca481cc3e942e5a07fc3a0ea
+  sha256: 820a2ef7a6edae624c8f2b2b8e22c5daace47af9dc91bb40ce6fe1f8169d299e
   patches:
     - racon_wrapper.patch
 
 requirements:
   build:
+    - make
     - {{ compiler('cxx') }}
     - cmake
   host:

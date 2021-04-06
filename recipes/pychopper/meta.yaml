@@ -1,5 +1,5 @@
 {% set name = "pychopper" %}
-{% set version = "2.1.0" %}
+{% set version = "2.5.0" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/nanoporetech/pychopper/archive/v{{ version }}.tar.gz
-  sha256: 850f9ce7e83b93f7856a32a08478dbd069013991d354ef2a66e6b105ea6abb98
+  sha256: 1800a2c5e19f2a025da579608e87ec1a802cf5196fc9e8fed936cb09e2e5e465
 
 build:
   noarch: python
@@ -22,9 +22,9 @@ requirements:
     - python >=3
     - python-edlib
     - parasail-python
-    - hmmer >=3
+    - hmmer >=3.2
     - tqdm
-    - matplotlib
+    - matplotlib-base
     - seaborn
     - six
     - pandas
