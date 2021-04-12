@@ -1,4 +1,5 @@
 #!/bin/bash
 
-mkdir -p $PREFIX/bin
-cp -r * $PREFIX
+mkdir -p $CONDA_PREFIX/bin
+cp -r * $CONDA_PREFIX/bin
+
